@@ -1,4 +1,3 @@
-;Umair Habib
 ;Brick_Breaker Game
 
 
@@ -97,7 +96,7 @@ pusha
  mov si,0
 			  abc:
               mov ah, 0x13 ; service 13 - print string
-			  mov al, 0 ; subservice 01 – update cursor
+			  mov al, 0 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, 0x40 ; normal attrib
 			  mov cx, 1 ; length of string
@@ -121,7 +120,7 @@ loop1:
 		  mov dx,[bx+si]
 		  add si,2
 			  mov ah, 0x13 ; service 13 - print string
-			  mov al, 0 ; subservice 01 – update cursor
+			  mov al, 0 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, [bp+6] ; normal attrib
 			  mov cx, 1 ; length of string
@@ -310,7 +309,7 @@ startpage:
 			  INT 10H ;video BIOS
 
 			  mov ah, 0x13 ; service 13 - print string
-			  mov al, 1 ; subservice 01 – update cursor
+			  mov al, 1 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, 75 ; normal attrib
 			  mov cx, 22 ; length of string
@@ -322,7 +321,7 @@ startpage:
 
 
 			  mov ah, 0x13 ; service 13 - print string
-			  mov al, 1 ; subservice 01 – update cursor
+			  mov al, 1 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, 75 ; normal attrib
 			  mov cx, 29 ; length of string
@@ -333,7 +332,7 @@ startpage:
 			  int 0x10 ; call BIOS video service
 
 			  mov ah, 0x13 ; service 13 - print string
-			  mov al, 1 ; subservice 01 – update cursor
+			  mov al, 1 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, 75 ; normal attrib
 			  mov cx, 8 ; length of string
@@ -440,7 +439,7 @@ loading:
 
 
 			  mov ah, 0x13 ; service 13 - print string
-			  mov al, 1 ; subservice 01 – update cursor
+			  mov al, 1 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, 75 ; normal attrib
 			  mov cx, 24 ; length of string
@@ -499,7 +498,7 @@ r3:
 
 			  add si,2
 			  mov ah, 0x13 ; service 13 - print string
-			  mov al, 0 ; subservice 01 – update cursor
+			  mov al, 0 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, [bp+6] ; normal attrib
 			  mov cx, 1 ; length of string
@@ -529,7 +528,7 @@ ls1:
 ls2:
 		  add si,2
 			  mov ah, 0x13 ; service 13 - print string
-			  mov al, 0 ; subservice 01 – update cursor
+			  mov al, 0 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, 7 ; normal attrib
 			  mov cx,1; length of string
@@ -647,7 +646,7 @@ inn2:
 			  mov dh,byte[cs:ballrowspace]
 		  mov dl,byte[cs:ballcolspace]
 		  mov ah, 0x13 ; service 13 - print string
-			  mov al, 0 ; subservice 01 – update cursor
+			  mov al, 0 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, 0x07; normal attrib
 			  mov cx, 1 ; length of string
@@ -747,7 +746,7 @@ mid111:
 		  ;mov dx,word[ballposition]
 		  add si,2
 			  mov ah, 0x13 ; service 13 - print string
-			  mov al, 0 ; subservice 01 – update cursor
+			  mov al, 0 ; subservice 01 â€“ update cursor
 			  mov bh, 0 ; output on page 0
 			  mov bl, 7 ; normal attrib
 			  mov cx, 1 ; length of string
